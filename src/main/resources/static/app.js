@@ -1,12 +1,12 @@
 document.getElementById('gameForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const players = document.getElementById('Players').value;
+    const players = document.getElementById('players').value;
 
 
     const platform = document.querySelector('input[name="platform"]:checked').value;
 
-    fetch(`/api/game?Players=${players}&platform=${platform}`)
+    fetch(`/api/game?players=${players}&platform=${platform}`)
     .then(response => response.json())
     .then(data => {
 
