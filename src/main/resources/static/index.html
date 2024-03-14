@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Suggestion App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Find a Game for Your Group</h1>
+    <div class="form-container">
+       <form id="gameForm">
+        <div>
+        <label for="players">Players: <span id="playersValue">1</span></label>
+        <input type="range" id="Players" name="players" min="2" max="8" value="1" oninput="updatePlayersValue(this.value)">
+        </div>
+
+        <div>
+            <input type="radio" id="platformPC" name="platform" value="PC" checked>
+            <label for="platformPC">PC</label>
+            <input type="radio" id="platformConsole" name="platform" value="Console">
+            <label for="platformConsole">Console</label>
+        </div>
+
+        <div>
+        <button type="submit">Find Games</button>
+        </div>
+       </form>
+    </div>
+
+    <div id="gameCount"></div>
+
+    <div id="gameSuggestions"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
