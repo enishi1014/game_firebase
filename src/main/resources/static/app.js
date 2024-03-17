@@ -15,7 +15,7 @@ document.getElementById('gameForm').addEventListener('submit', function(e) {
         suggestions.innerHTML = ''; 
 
         if (data && Array.isArray(data) && data.length > 0) {
-            gameCount.textContent = `Found ${data.length} game`;
+            gameCount.textContent = `Found ${data.length} game(s)`;
 
             data.forEach(game => {
                 

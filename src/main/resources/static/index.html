@@ -11,15 +11,17 @@
     <div class="form-container">
        <form id="gameForm">
         <div>
-        <label for="players">Players: <span id="playersValue">1</span></label>
-        <input type="range" id="players" name="players" min="2" max="8" value="1" oninput="updatePlayersValue(this.value)">
+        <label for="players">Players: <span id="playersValue">2</span></label>
+        <input type="range" id="players" name="players" min="2" max="8" value="2" oninput="updatePlayersValue(this.value)">
         </div>
 
         <div>
             <input type="radio" id="platformPC" name="platform" value="PC" checked>
             <label for="platformPC">PC</label>
-            <input type="radio" id="platformConsole" name="platform" value="Console">
-            <label for="platformConsole">Console</label>
+            <input type="radio" id="platformSwitch" name="platform" value="Switch">
+            <label for="platformSwitch">Switch</label>
+            <input type="radio" id="platformMobile" name="platform" value="Mobile">
+            <label for="platformMobile">Mobile</label>            
         </div>
 
         <div>
