@@ -4,7 +4,6 @@ import com.example.gameapp.model.Game;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-//import reactor.core.publisher.Flux;
 
 import jakarta.annotation.PostConstruct;
 import reactor.core.publisher.Flux;
@@ -40,7 +39,7 @@ public class GameService {
                         .queryParam("platform", "eq." + platform)
                         .build())
                 .retrieve()
-                .bodyToFlux(Game.class); // 直接Flux<Game>を返す
+                .bodyToFlux(Game.class);
     }
 
 }

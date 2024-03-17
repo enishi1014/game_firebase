@@ -26,8 +26,6 @@ public class Game {
         this.platform = platform;
     }
 
-    // Getters and Setters
-
     public Long getId() {
         return id;
     }

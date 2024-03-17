@@ -56,8 +56,6 @@ document.getElementById('gameForm').addEventListener('submit', function(e) {
         errorContainer.style.color = 'red'; 
     });
 
-
-
 });
 
 function updatePlayersValue(value) {
